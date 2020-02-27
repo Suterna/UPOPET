@@ -1,0 +1,32 @@
+<fieldset class="mt-5">
+    <form class=" mx-auto col-12" name="frmAltaMascota" id="frmAltaMascota">
+        <div class="form-group row" id="codCliente">
+            <label for="codCliente" class="col-4 col-form-label">Código Cliente</label>
+            <div class="col-8">
+                <select class="form-control" name="codCliente" id="codCliente1"></select>
+            </div>
+        </div>
+        <div class="form-group row" id="raza">
+            <label for="raza" class="col-4 col-form-label">Raza</label>
+            <div class="col-8">
+                <input name="raza" id="raza1" type="text" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group row" id="sexo">
+            <label for="sexo" class="col-4 col-form-label">Sexo</label>
+            <div class="col-8 pt-2">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" id="sexo1" value="M" checked>Macho
+                </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" id="sexo2" value="H">Hembra
+                </label>
+                </div>
+            </div>
+        </div>
+        <button name="btnAceptarProp" type="submit" id="btnAceptarProp" class="btn aceptar w-25 mt-3">Aceptar</button>
+    </form>
+</fieldset>

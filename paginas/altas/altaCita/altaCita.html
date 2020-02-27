@@ -1,0 +1,32 @@
+<fieldset class="mt-5">
+    <form class=" mx-auto col-12" name="frmAltaCita" id="frmAltaCita">
+        <div class="form-group row" id="codVeterinario">
+            <label for="codVeterinario" class="col-4 col-form-label">Código Veterinario</label>
+            <div class="col-8">
+                <select class="form-control" name="codVeterinario" id="codVeterinario1" required></select>
+            </div>
+        </div>
+        <div class="form-group row" id="codCliente">
+            <label for="codCliente" class="col-4 col-form-label">Código Cliente</label>
+            <div class="col-8">
+                <select class="form-control" name="codCliente" id="codCliente1" required></select>
+            </div>
+        </div>
+        <div class="form-group row" id="codMascota">
+            <label for="codMascota" class="col-4 col-form-label">Código Mascota</label>
+            <div class="col-8">
+                <select class="form-control" name="codChip" id="codChip1" required></select>
+            </div>
+        </div>
+        <div class="form-group row" id="fechaCita">
+            <label for="fechaCita" class="col-4 col-form-label">Fecha Cita</label>
+            <div class="col-8">
+                <!-- <p>Date: <input type="text" id="fechaCita"></p> -->
+                <input name="fechaCita" id="fechaCita" type="date" class="form-control" required>
+            </div>
+        </div>
+
+        <button name="btnAceptarProp" type="submit" id="btnAceptarProp" class="btn aceptar w-25 mt-3">Aceptar</button>
+
+    </form>
+</fieldset>
