@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>UPOPET</title>
+    <link rel="icon" type="image/png" href="img/paw.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container jumbotron bg-dark text-light text-center py-3 mt-5">
+        <img class="pb-2" src="img/otroLogo3.png" width="110" height="105" alt="UPOPET">
+        <h1>UPOPET</h1>
+    </div>
+    <div class="container shadow-lg bg-light mx-auto my-5">
+        <div class="row justify-content-center py-3">
+            <div class="col-auto" id="menu">
+                <div class="btn-group" role="group">
+                    <button class="btn" type="button" onclick="mostrarAltas()">MOSTRAR ALTAS</button>
+                    <button class="btn" type="button" onclick="mostrarListados()">MOSTRAR LISTADOS</button>
+                </div>
+            </div>
+            <div class="col-auto" id="altas">
+                <div class="btn-group" role="group">
+                    <button class="btn" type="button" id="mnuAltaVeterinario">ALTA VETERINARIO</button>
+                    <button class="btn" type="button" id="mnuAltaCliente">ALTA CLIENTE</button>
+                    <button class="btn" type="button" id="mnuAltaMascota">ALTA MASCOTA</button>
+                    <button class="btn" type="button" id="mnuAltaCita">ALTA CITA</button>
+                </div>
+            </div>
+            <div class="col-auto" id="listados">
+                <div class="btn-group" role="group">
+                    <button class="btn" type="button" id="mnuListadoVeterinarios">LISTADO DE VETERINARIOS</button>
+                    <button class="btn" type="button" id="mnuListadoClientes">LISTADO DE CLIENTES</button>
+                    <button class="btn" type="button" id="mnuListadoMascotas">LISTADO DE MASCOTAS</button>
+                    <button class="btn" type="button" id="mnuListadoCitas">LISTADO DE CITAS</button>
+                </div>
+            </div>
+
+            <div id="formularios" class=" w-75 mx-auto"></div>
+
+            <table class='table text-center mx-auto table-striped w-75 table-hover shadow-lg mt-5' name="tabla" id="tabla"></table>
+
+            <form id="botonVolver" class="text-center w-100">
+                <button name="enter" type="button" id="volver" class="btn volver w-25 mt-5" onclick="mostrarMenu()">Volver</button>
+            </form>
+
+            <div class="container-fluid px-0 mb-4 text-center mt-5" id="imagenMenu">
+                <img class="" height="250" src="img/siluetas.png" alt="pieDePágina">
+            </div>
+
+            <script src="js/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script src="js/bootstrap-select.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
